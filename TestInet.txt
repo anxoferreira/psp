@@ -1,0 +1,7 @@
+El metodo estatico pruebaMetodos recibe un parametro InetAdress, el metodo devuelve unas direcciones ip correspondiente al equipo en el que se ejecuta el codigo.
+El metodo getLocalHost devuelve un objeto que es la direccion ip de donde se ejecuta el programa.
+Metodo getByName devuelve la direccion ip de la maquina que se le papsa como parametro.
+El metodo getAllByName devuelve un array de objetos con todas las ip asignadas a un equipo concreto.
+Metodo getHostAdress devuelve la ip de un objeto en forma de cadena.
+getHostName devuelve el nombre del host.
+getCanonicalHostName obtiene el nombre canonico completo.
