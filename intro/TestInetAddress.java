@@ -14,7 +14,7 @@ public class TestInetAddress {
         try {
 
             // LOCALHOST
-            dir = InetAddress.getLocalHost();            
+            dir = InetAddress.getLocalHost();
             pruebaMetodos(dir);
 
             // URL www.google.es
@@ -28,8 +28,7 @@ public class TestInetAddress {
             // asignadas a google.es
             System.out.println("\tDIRECCIONES IP PARA: " + dir.getHostName());
 
-            InetAddress[] direcciones =
-                    InetAddress.getAllByName(dir.getHostName());
+            InetAddress[] direcciones = InetAddress.getAllByName(dir.getHostName());
 
             for (int i = 0; i < direcciones.length; i++) {
                 System.out.println("\t\t" + direcciones[i].toString());
@@ -62,13 +61,10 @@ public class TestInetAddress {
         // USAMOS METODOS DE LA CLASE
 
         System.out.println("\tMetodo getHostName(): " + dir.getHostName());
-
         System.out.println("\tMetodo getHostAddress(): "
                 + dir.getHostAddress());
-
         System.out.println("\tMetodo toString(): "
                 + dir.toString());
-
         System.out.println("\tMetodo getCanonicalHostName(): "
                 + dir.getCanonicalHostName());
     }
