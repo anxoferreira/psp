@@ -60,11 +60,15 @@ public class TestInetAddress {
 
         // USAMOS METODOS DE LA CLASE
 
-        System.out.println("\tMetodo getHostName(): " + dir.getHostName());
+        System.out.println("\tMetodo getHostName(): " 
+                + dir.getHostName());
+
         System.out.println("\tMetodo getHostAddress(): "
                 + dir.getHostAddress());
+
         System.out.println("\tMetodo toString(): "
                 + dir.toString());
+
         System.out.println("\tMetodo getCanonicalHostName(): "
                 + dir.getCanonicalHostName());
     }
