@@ -1,0 +1,1 @@
+En el ejemplo pide un nombre y pide un apellido, estos los recoge un escaner y los mete en una cadena, se pasan a un servidor en el que se guardan y luego se mueestra
