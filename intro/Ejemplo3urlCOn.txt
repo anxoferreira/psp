@@ -1,0 +1,39 @@
+Direccion getURL(): http://localhost/indice.html
+Fecha ultima modificacion getLastModified(): Mon Sep 21 09:21:25 CEST 2026
+Tipo de Contenido getContentType(): text/html
+==================================================
+TODOS LOS CAMPOS DE CABECERA CON getHeaderFields(): 
+null : [HTTP/1.1 200 OK]    //Dice que responde
+Accept-Ranges : [bytes]
+Keep-Alive : [timeout=5, max=100] //Dice tiempo de timeout
+Server : [Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12]   //Dice el server que usuario
+ETag : ["253-65bf91911c7f6"]
+Connection : [Keep-Alive]
+Last-Modified : [Mon, 21 Sep 2026 07:21:25 GMT] //Dice la ultima modificacion del archivo
+Content-Length : [595]  //La longitud de indice.html
+Date : [Mon, 28 Sep 2026 06:51:18 GMT]  //La fecha en la que se ejecuta
+Content-Type : [text/html]  //Tipo de documento
+==================================================
+CAMPOS 1 Y 4 DE CABECERA:
+getHeaderField(1)=> Mon, 28 Sep 2026 06:51:18 GMT
+getHeaderField(4)=> "253-65bf91911c7f6"
+==================================================
+CONTENIDO DE [url.getFile()]:/indice.html //El contenido del html (todo lo que viene ahora)
+<html>
+
+<body>
+    <form action="vernombre.php" method="post">
+        <p>Escribe tu nombre:
+        <!-- recoge el nombre del usuario y lo asigna a la variable $nombre -->
+            <input name="nombre" type="text" size="15">
+        </p>
+        <p>Escribe tus apellidos:
+        <!-- recoge los apellidos y los asigna a la variable apellidos -->
+            <input name="apellidos" type="text" size="15">
+        </p>
+        <input type="submit" name="ver" value="Ver">
+        <!-- boton que postea el formulario a la pagina vernombre.php -->
+    </form>
+</body>
+
+</html>
