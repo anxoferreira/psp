@@ -12,7 +12,7 @@ public class Cliente11 {
     public static void main(String[] args) {
 
         try {
-            String host = "localhost";
+            String host = "10.101.20.241";
             int port = 6000;
 
             Socket cliente = new Socket(host, port);
