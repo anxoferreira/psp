@@ -1,4 +1,4 @@
-package tcp0;
+package tcp0.src;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -21,7 +21,7 @@ public class Cliente0 {
             System.out.println("Host Remoto: " + inetAdress.getHostName().toString());
             System.out.println("IP Host Remoto: " + inetAdress.getHostAddress().toString());
             cliente.close();// Cierra el socket
-            
+
         } catch (IOException e) {
             e.printStackTrace();
         }

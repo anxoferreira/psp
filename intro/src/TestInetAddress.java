@@ -1,4 +1,4 @@
-package intro;
+package intro.src;
 
 import java.net.*;
 
@@ -60,7 +60,7 @@ public class TestInetAddress {
 
         // USAMOS METODOS DE LA CLASE
 
-        System.out.println("\tMetodo getHostName(): " 
+        System.out.println("\tMetodo getHostName(): "
                 + dir.getHostName());
 
         System.out.println("\tMetodo getHostAddress(): "

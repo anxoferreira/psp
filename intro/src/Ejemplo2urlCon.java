@@ -1,16 +1,16 @@
-package intro;
+package intro.src;
 
-import java.util.*;
 import java.io.*;
 import java.net.*;
+import java.util.*;
 
 public class Ejemplo2urlCon {
     public static void main(String[] args) {
-      
+
         Scanner sc = new Scanner(System.in);
-      
+
         try {
-            //escribe tu propia ruta aqui
+            // escribe tu propia ruta aqui
             URL url = new URL("http://localhost/vernombre.php");
             URLConnection conexion = url.openConnection();
             conexion.setDoOutput(true);
@@ -21,20 +21,18 @@ public class Ejemplo2urlCon {
             String apellidos = sc.nextLine();
             String cadena = "nombre=" + nombre + "&apellidos=" + apellidos;
 
-            //ESCRIBIR EN LA URL
-            PrintWriter output = new PrintWriter
-                    (conexion.getOutputStream());
+            // ESCRIBIR EN LA URL
+            PrintWriter output = new PrintWriter(conexion.getOutputStream());
             output.write(cadena);
-            output.close(); //cerrar flujo
+            output.close(); // cerrar flujo
 
-            //LEER DE LA URL
-            BufferedReader reader = new BufferedReader
-                    (new InputStreamReader(conexion.getInputStream()));
+            // LEER DE LA URL
+            BufferedReader reader = new BufferedReader(new InputStreamReader(conexion.getInputStream()));
             String linea;
             while ((linea = reader.readLine()) != null) {
                 System.out.println(linea);
             }
-            reader.close();//cerrar flujo
+            reader.close();// cerrar flujo
 
         } catch (MalformedURLException me) {
             System.err.println("MalformedURLException: " + me);

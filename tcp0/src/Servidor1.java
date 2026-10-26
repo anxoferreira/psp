@@ -1,4 +1,4 @@
-package tcp0;
+package tcp0.src;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -9,9 +9,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Servidor1 {
-    
+
     public static void main(String[] args) {
-        
+
         try {
             int port = 6000; // puerto
             ServerSocket servidor = new ServerSocket(port);
@@ -60,7 +60,7 @@ public class Servidor1 {
             cliente2.close();
 
             servidor.close(); // cierro socket servidor
-            
+
         } catch (IOException e) {
             e.printStackTrace();
         }

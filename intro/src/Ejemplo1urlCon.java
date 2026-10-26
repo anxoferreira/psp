@@ -1,28 +1,29 @@
-package intro;
+package intro.src;
 
-import java.net.*;
 import java.io.*;
+import java.net.*;
 
 public class Ejemplo1urlCon {
     public static void main(String[] args) {
-        URL url=null;
-        URLConnection urlCon=null;
+        URL url = null;
+        URLConnection urlCon = null;
         try {
             url = new URL("http://www.elaltozano.es");
-            urlCon= url.openConnection();
+            urlCon = url.openConnection();
 
             BufferedReader in;
             InputStream inputStream = urlCon.getInputStream();
-            in = new BufferedReader(new
-                        InputStreamReader(inputStream));
+            in = new BufferedReader(new InputStreamReader(inputStream));
             String inputLine;
             while ((inputLine = in.readLine()) != null) {
                 System.out.println(inputLine);
             }
 
             in.close();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        catch (MalformedURLException e) {e.printStackTrace();}
-        catch (IOException e) {e.printStackTrace();}
     }
 }

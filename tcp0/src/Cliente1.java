@@ -1,4 +1,4 @@
-package tcp0;
+package tcp0.src;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -9,9 +9,9 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 public class Cliente1 {
-    
+
     public static void main(String[] args) {
-        
+
         try {
             String host = "localhost";
             int port = 6000; // puerto remoto
@@ -45,7 +45,7 @@ public class Cliente1 {
             salida.close();
             flujoSalida.close();
             cliente.close(); // Cierra el socket
-            
+
         } catch (IOException e) {
             e.printStackTrace();
         }

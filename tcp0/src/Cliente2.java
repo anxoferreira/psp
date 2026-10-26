@@ -1,4 +1,4 @@
-package tcp0;
+package tcp0.src;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -8,9 +8,9 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class Cliente2 {
-    
+
     public static void main(String[] args) {
-        
+
         try {
             String host = "localhost";
             int port = 6000;
@@ -38,7 +38,7 @@ public class Cliente2 {
                         }
                     } else {
                         System.out.println("Error: Debes introducir un número entero válido.");
-                        scanner.next(); 
+                        scanner.next();
                     }
                 }
 
@@ -57,7 +57,7 @@ public class Cliente2 {
             flujoSalida.close();
             cliente.close();
             System.out.println("El cliente es un papanatas y se fue.");
-            
+
         } catch (IOException e) {
             e.printStackTrace();
         }

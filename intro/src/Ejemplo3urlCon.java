@@ -1,5 +1,7 @@
-import java.net.*;
+package intro.src;
+
 import java.io.*;
+import java.net.*;
 import java.util.*;
 
 public class Ejemplo3urlCon {
@@ -18,7 +20,7 @@ public class Ejemplo3urlCon {
         System.out.println("==================================================");
         System.out.println("TODOS LOS CAMPOS DE CABECERA CON getHeaderFields(): ");
 
-        //USAMOS UNA ESTRUCTURA Map PARA RECUPERAR CABECERAS
+        // USAMOS UNA ESTRUCTURA Map PARA RECUPERAR CABECERAS
         Map camposcabecera = conexion.getHeaderFields();
         Iterator it = camposcabecera.entrySet().iterator();
         while (it.hasNext()) {
@@ -32,7 +34,7 @@ public class Ejemplo3urlCon {
         System.out.println("getHeaderField(4)=> " + conexion.getHeaderField(4));
         System.out.println("==================================================");
 
-        System.out.println("CONTENIDO DE [url.getFile()]:"+url.getFile());
+        System.out.println("CONTENIDO DE [url.getFile()]:" + url.getFile());
         BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
 
         while ((cadena = br.readLine()) != null) {

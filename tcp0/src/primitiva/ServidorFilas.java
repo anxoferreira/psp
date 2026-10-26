@@ -1,4 +1,4 @@
-package tcp0.primitiva;
+package tcp0.src.primitiva;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

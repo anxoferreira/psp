@@ -1,13 +1,13 @@
-package tcp0;
+package tcp0.src;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 class Servidor0 {
-    
+
     public static void main(String[] args) {
-        
+
         try {
             int port = 6000; // puerto
             ServerSocket servidor = new ServerSocket(port);
@@ -20,7 +20,7 @@ class Servidor0 {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+
     }
 
 }

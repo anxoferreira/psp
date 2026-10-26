@@ -1,7 +1,7 @@
-package tcp0;
+package tcp0.src;
 
 public class LogicaNPerfecto {
-    
+
     public static boolean esNumeroPerfecto(int numero) {
         if (numero <= 1) {
             return false;
