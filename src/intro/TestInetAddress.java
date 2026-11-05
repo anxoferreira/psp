@@ -1,4 +1,4 @@
-package intro.src;
+package intro;
 
 import java.net.*;
 

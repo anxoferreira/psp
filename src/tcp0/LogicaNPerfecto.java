@@ -1,4 +1,4 @@
-package tcp0.src;
+package tcp0;
 
 public class LogicaNPerfecto {
 

@@ -1,4 +1,4 @@
-package tcp0.src;
+package tcp0;
 
 import java.io.IOException;
 import java.net.ServerSocket;
