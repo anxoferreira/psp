@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-public class servidorFilas {
+public class ServidorFilas {
 
     public static void main(String[] args) {
         try {
